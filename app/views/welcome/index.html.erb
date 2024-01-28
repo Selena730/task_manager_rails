@@ -1,0 +1,13 @@
+<h1>Welcome to the Task Manager</h1>
+
+<ul>
+  <li><a href="/tasks">Task Index</a></li>
+  <li><a href="/tasks/new">New Task</a></li>
+</ul>
+
+<h1>All Tasks</h1>
+
+<% @tasks.each do |task| %>
+  <h3><%= task.title %></h3>
+  <p><%= task.description %></p>
+<% end %>
